@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
     Button btnActivity1;
     Button btnActivity2;
+    Button btnlgn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private void linkView() {
         btnActivity1 = findViewById(R.id.btnActivity1);
         btnActivity2 = findViewById(R.id.btnActivity2);
+        btnlgn = findViewById(R.id.btnlgn);
     }
 
     private void addEvent() {
@@ -38,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent iActivity2 = new Intent(MainActivity.this, Bai2Activity.class);
                 startActivity(iActivity2);
+            }
+        });
+        btnlgn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ilgn= new Intent(MainActivity.this, lgnActivity.class);
+                startActivity(ilgn);
             }
         });
     }

@@ -45,12 +45,12 @@ public class CreateDatabase extends SQLiteOpenHelper {
         cursor.close();
         return count;
     }
-//    public void crateSomeDefaultProduct() {
-//        int count = this.getNumbofProduct();
-//        if (count == 0) {
-//            execQuery("INSERT INTO " + TBL_NAME + " VALUES(1,'Heineken',19000)");
-//            execQuery("INSERT INTO " + TBL_NAME + " VALUES(2,'Tiger',17000)");
-//            execQuery("INSERT INTO " + TBL_NAME + " VALUES(3,'Sapparo',20000)");
-//        }
-//    }
+    public void crateSomeDefaultProduct() {
+        int count = this.getNumbofProduct();
+        if (count == 0) {
+            execQuery("INSERT INTO " + TBL_NAME + " VALUES(1,'Hoa vang',19000)");
+            execQuery("INSERT INTO " + TBL_NAME + " VALUES(2,'Nguyeen nhaat anh',17000)");
+            execQuery("INSERT INTO " + TBL_NAME + " VALUES(3,'Lam giau',20000)");
+        }
+    }
 }

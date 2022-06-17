@@ -22,6 +22,7 @@
         <activity android:name=".Bai2Activity"></activity>
         <activity android:name=".Dialog"
             android:theme="@style/Theme.Material3.Light.Dialog"></activity>
+        <activity android:name=".lgnActivity"></activity>
     </application>
 
 </manifest>

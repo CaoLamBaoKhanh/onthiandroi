@@ -35,7 +35,13 @@ public class Bai2Activity extends AppCompatActivity {
 
     private void prepareDB() {
         database= new CreateDatabase(this);
-//        database.crateSomeDefaultProduct();
+        database.crateSomeDefaultProduct();
+    }
+
+    @Override
+    protected void onResume() {
+        loadData();
+        super.onResume();
     }
 
     private void loadData() {
