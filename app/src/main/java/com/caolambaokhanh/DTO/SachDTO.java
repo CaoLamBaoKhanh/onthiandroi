@@ -25,6 +25,13 @@ public class SachDTO {
         GiaSach = giaSach;
     }
 
+    public SachDTO(int maSach, String tensach, String giaSach){
+        MaSach = maSach;
+        TanSach= tensach;
+        GiaSach = giaSach;
+
+    }
     int MaSach;
     String TanSach, GiaSach;
+
 }

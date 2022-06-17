@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".Bai1Activity"></activity>
         <activity android:name=".Bai2Activity"></activity>
+        <activity android:name=".Dialog"
+            android:theme="@style/Theme.Material3.Light.Dialog"></activity>
     </application>
 
 </manifest>

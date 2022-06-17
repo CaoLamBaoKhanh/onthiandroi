@@ -15,8 +15,8 @@ public class CreateDatabase extends SQLiteOpenHelper {
     public static final String COL_NAME="SachName";
     public static final String COL_PRICE="SachPrice";
 
-    public CreateDatabase(@Nullable Context context, @Nullable String name, @Nullable SQLiteDatabase.CursorFactory factory, int version) {
-        super(context, name, factory, version);
+    public CreateDatabase(@Nullable Context context) {
+        super(context, DB_NAME, null, DB_VERSION);
     }
 
     @Override
@@ -45,12 +45,12 @@ public class CreateDatabase extends SQLiteOpenHelper {
         cursor.close();
         return count;
     }
-    public void crateSomeDefaultProduct() {
-        int count = this.getNumbofProduct();
-        if (count == 0) {
-            execQuery("INSERT INTO " + TBL_NAME + " VALUES(1,'Heineken',19000)");
-            execQuery("INSERT INTO " + TBL_NAME + " VALUES(2,'Tiger',17000)");
-            execQuery("INSERT INTO " + TBL_NAME + " VALUES(3,'Sapparo',20000)");
-        }
-    }
+//    public void crateSomeDefaultProduct() {
+//        int count = this.getNumbofProduct();
+//        if (count == 0) {
+//            execQuery("INSERT INTO " + TBL_NAME + " VALUES(1,'Heineken',19000)");
+//            execQuery("INSERT INTO " + TBL_NAME + " VALUES(2,'Tiger',17000)");
+//            execQuery("INSERT INTO " + TBL_NAME + " VALUES(3,'Sapparo',20000)");
+//        }
+//    }
 }
